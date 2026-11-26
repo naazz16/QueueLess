@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueueLess | Smart Queue Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>QueueLess</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#book">Book Token</a>
+            <a href="#status">Queue Status</a>
+            <a href="#admin">Admin</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Your Time Matters.</h1>
+        <h2>Skip the Waiting.</h2>
+        <p>
+            Book your digital token and avoid standing
+            in long queues at your campus.
+        </p>
+        <a href="#book" class="btn">Get Your Token</a>
+    </section>
+
+    <section class="booking" id="book">
+        <h2>Book Your Token</h2>
+
+        <form id="bookingForm">
+
+            <input type="text" id="name"
+                placeholder="Enter Your Name" required>
+
+            <input type="text" id="studentId"
+                placeholder="Enter Student ID" required>
+
+            <select id="service" required>
+                <option value="">Select Service</option>
+                <option>Student Help Desk</option>
+                <option>Library Counter</option>
+                <option>Accounts Office</option>
+            </select>
+
+            <button type="submit">Book Token</button>
+
+        </form>
+
+        <div id="result"></div>
+    </section>
+
+    <section class="status" id="status">
+        <h2>Queue Status</h2>
+        <p>Check the current campus queue status.</p>
+        <div id="queueStatus"></div>
+    </section>
+
+    <footer>
+        <p>© 2026 QueueLess | Smart Campus Queue Management</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

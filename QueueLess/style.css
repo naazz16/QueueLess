@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f6ff;
+    color: #25264a;
+}
+
+/* NAVIGATION */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+}
+
+header h2 {
+    color: #6658e8;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+nav a {
+    text-decoration: none;
+    color: #454568;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #6658e8;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 430px;
+    padding: 110px 20px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #6658e8,
+        #9285f5,
+        #b7aaff
+    );
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: #6658e8;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #25264a;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* BOOKING SECTION */
+
+.booking {
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.booking h2,
+.status h2 {
+    font-size: 32px;
+    color: #6658e8;
+    margin-bottom: 30px;
+}
+
+form {
+    background: white;
+    max-width: 430px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(70,60,150,0.1);
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #dddaf5;
+    border-radius: 9px;
+    outline: none;
+    font-size: 15px;
+    background: #fafaff;
+}
+
+input:focus, select:focus {
+    border-color: #6648e8;
+    box-shadow: 0 0 5px #b7afff;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #6658e8, #9586f5);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4c40c7;
+    transform: translateY(-2px);
+}
+
+#result {
+    margin: 25px auto 0;
+    max-width: 430px;
+    color: #5144c8;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* QUEUE STATUS */
+
+.status {
+    padding: 75px 20px;
+    text-align: center;
+    background: #eeedff;
+    min-height: 220px;
+}
+
+.status p {
+    color: #77758e;
+}
+
+/* FOOTER */
+
+footer {
+    background: #25264a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    form {
+        padding: 22px;
+    }
+}
